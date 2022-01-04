@@ -1,16 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import s from './Statistics.module.css';
 
 const Statistics = ({ options, total, positivePercentage }) => {
   return (
-    <ul className="statistics-list">
+    <ul className={s.statistics__list}>
       {Object.keys(options).map(option => (
-        <li key={option} className="statistics-item">
+        <li key={option} className={s.statistics__item}>
           {option}: {options[option]}
         </li>
       ))}
-      <li className="statistics-item">Total: {total}</li>
-      <li className="statistics-item">Positive feedback: {positivePercentage}%</li>
+      <li className={s.statistics__item}>Total: {total}</li>
+      <li className={s.statistics__item}>Positive feedback: {positivePercentage}%</li>
     </ul>
   );
 };

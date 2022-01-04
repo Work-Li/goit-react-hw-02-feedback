@@ -1,0 +1,15 @@
+.button {
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 5px;
+  width: calc((100% - 20px) / 4);
+}
+
+.button:not(:last-child) {
+  margin-right: 10px;
+}
+.button:hover {
+  background-color: rgb(209, 171, 245);
+  font-weight: bold;
+}

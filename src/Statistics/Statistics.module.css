@@ -1,0 +1,9 @@
+.statistics__list {
+  list-style: none;
+  text-align: left;
+}
+
+.statistics__item {
+  text-transform: capitalize;
+  margin-bottom: 7px;
+}
